@@ -60,7 +60,7 @@ $(NAME):    $(OBJS)
 	ar rc $(NAME) $(OBJS) && ranlib $(NAME)
 
 %.o:	%.c $(INCLUDES)libft.h Makefile
-	$(CC) $(CFLAGS) -o $@ -c $< -I $(INCLUDES)
+	gcc -Wall -Wextra -Werror -o $@ -c $< -I $(INCLUDES)
 
 clean:
 	rm -f $(OBJS)
