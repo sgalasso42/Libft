@@ -6,7 +6,7 @@
 /*   By: sgalasso <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/03 22:40:39 by sgalasso          #+#    #+#             */
-/*   Updated: 2018/10/17 11:45:47 by sgalasso         ###   ########.fr       */
+/*   Updated: 2018/10/22 15:22:26 by sgalasso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ void		ft_putendl_fd(char const *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
 
 double		ft_sq(double a);
+double		ft_abs(double a);
 int			ft_pow(int p, int i);
 int			ft_sqrt(int nb);
 

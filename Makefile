@@ -49,6 +49,7 @@ SRCS =	ft_memset.c \
 		lib_math/ft_sq.c \
 		lib_math/ft_pow.c \
 		lib_math/ft_sqrt.c \
+		lib_math/ft_abs.c \
 
 OBJS =	$(SRCS:.c=.o)
 
