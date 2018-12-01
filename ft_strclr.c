@@ -18,8 +18,5 @@ void	ft_strclr(char *s)
 
 	i = 0;
 	while (s && s[i])
-	{
-		s[i] = '\0';
-		i++;
-	}
+		s[i++] = '\0';
 }

@@ -14,20 +14,9 @@
 
 char	*ft_strdup(const char *s)
 {
-	int		i;
 	char	*cpy;
 
-	i = 0;
-	while (s[i])
-		i++;
-	if (!(cpy = (char *)malloc(sizeof(char) * (i + 1))))
+	if (!(cpy = (char *)ft_memalloc(sizeof(char) * (ft_strlen(s) + 1))))
 		return (NULL);
-	i = 0;
-	while (s[i])
-	{
-		cpy[i] = s[i];
-		i++;
-	}
-	cpy[i] = '\0';
-	return (cpy);
+	return (ft_strcpy(cpy, s));
 }

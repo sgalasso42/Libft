@@ -21,13 +21,11 @@ static int		ft_nbwords(char *str, char c)
 	cpt = 0;
 	while (str[i])
 	{
-		if (str[i] != c && (str[i - 1] == c || i == 0))
-		{
+		if (i == 0 && str[i] != c)
 			cpt++;
-			i++;
-		}
-		else
-			i++;
+		else if (i != 0 && str[i] != c && str[i - 1] == c)
+			cpt++;
+		i++;
 	}
 	return (cpt);
 }

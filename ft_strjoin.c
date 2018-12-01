@@ -22,5 +22,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (0);
 	str = ft_strcat(str, (char *)s1);
 	str = ft_strcat(str, s2);
-	return ((char *)str);
+	return (str);
 }
