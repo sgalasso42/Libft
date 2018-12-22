@@ -40,7 +40,7 @@ char			**ft_strsplit(char const *str, char c)
 
 	i = 0;
 	index = 0;
-	if (!str || !(dest = (char **)(malloc(sizeof(char *)
+	if (!str || !(dest = (char **)(ft_memalloc(sizeof(char *)
 	* (ft_nbwords((char *)str, c) + 1)))))
 		return (0);
 	while (str[i])
@@ -55,6 +55,5 @@ char			**ft_strsplit(char const *str, char c)
 			if (!(dest[index++] = ft_strsub(str, start, end - start)))
 				return (0);
 	}
-	dest[index] = 0;
 	return (dest);
 }
