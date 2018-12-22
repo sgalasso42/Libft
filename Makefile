@@ -50,6 +50,7 @@ SRCS =	ft_memset.c \
 		lib_math/ft_pow.c \
 		lib_math/ft_sqrt.c \
 		lib_math/ft_abs.c \
+		lib_lifetime/lifetime.c \
 
 OBJS =	$(SRCS:.c=.o)
 

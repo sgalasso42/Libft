@@ -75,4 +75,17 @@ int			ft_sqrt(int nb);
 
 int			get_next_line(const int fd, char **line);
 
+typedef struct s_lt	t_lt;
+
+struct				s_lt
+{
+	void	*ptr;
+	t_lt	*next;
+};
+
+t_lt				*get_lifetime(t_lt	*new_ptr);
+void				*lt_push(void *ptr);
+void				lt_release(void *ptr);
+void				lt_destroy(void);
+
 #endif
